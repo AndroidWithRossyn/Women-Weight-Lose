@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+<LinearLayout
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.common.view.CBTextView
+        android:id="@+id/tvTitle"
+        style="@style/txt_000_18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_18sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAllCaps="true"
+        android:text="About App" />
+
+
+</LinearLayout>
+
+</layout>

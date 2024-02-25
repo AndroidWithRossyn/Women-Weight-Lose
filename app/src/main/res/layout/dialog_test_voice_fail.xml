@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <com.common.view.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_000_14"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/dl_test_voice_no_msg_test"/>
+
+        <com.common.view.CMTextView
+            android:id="@+id/tvDownloadTTSEngine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/txt_000_16"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/download_tts_engine"/>
+
+        <com.common.view.CMTextView
+            android:id="@+id/tvSelectTTSEngine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/txt_000_16"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="@string/select_tts_engine"/>
+
+    </LinearLayout>
+
+</layout>

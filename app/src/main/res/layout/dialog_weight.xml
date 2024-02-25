@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingEnd="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <com.common.view.CMTextView
+                android:id="@+id/tvTitle"
+                style="@style/txt_000_22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/weight" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.common.view.numberpicker.NumberPicker
+                    android:id="@+id/npWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:np_dividerColor="@color/primary"
+                    app:np_dividerThickness="1dp"
+                    app:np_max="24"
+                    app:np_min="1"
+                    app:np_selectedTextColor="@color/black"
+                    app:np_selectedTextSize="24sp"
+                    app:np_textColor="@color/number_picker_text_color"
+                    app:np_textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.common.view.numberpicker.NumberPicker
+                    android:id="@+id/npPointWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:np_dividerColor="@color/primary"
+                    app:np_dividerThickness="1dp"
+                    app:np_max="9"
+                    app:np_min="0"
+                    app:np_selectedTextColor="@color/black"
+                    app:np_selectedTextSize="24sp"
+                    app:np_textColor="@color/number_picker_text_color"
+                    app:np_textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@id/npWeight"/>
+
+                <com.common.view.numberpicker.NumberPicker
+                    android:id="@+id/npWeightUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:np_dividerColor="@color/primary"
+                    app:np_dividerThickness="1dp"
+                    app:np_max="2"
+                    app:np_min="1"
+                    app:np_selectedTextColor="@color/black"
+                    app:np_selectedTextSize="24sp"
+                    app:np_textColor="@color/number_picker_text_color"
+                    app:np_textSize="24sp"
+                    app:layout_constraintStart_toEndOf="@id/npPointWeight"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:src="@color/black"
+                    android:gravity="center"
+                    app:civ_circle_background_color="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/npPointWeight"
+                    app:layout_constraintStart_toEndOf="@id/npWeight"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:background="@color/gray_light____">
+
+                <com.common.view.CMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txt_fff_18"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_8sdp"
+                android:background="@color/primary">
+
+                <com.common.view.CMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/txt_fff_18"
+                    android:text="@string/save"
+                    android:textAllCaps="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isBackShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isRefreshShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isLogoutShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isInterNetAvailable"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isInterNetAvailableShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isHomeShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isReScanShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isMoreShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isResetShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="topBarClickListener"
+            type="com.loseweight.interfaces.TopBarClickListener" />
+
+        <variable
+            name="isSyncingShow"
+            type="java.lang.Boolean" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:gravity="center">
+
+                <com.common.view.CMTextView
+                    android:id="@+id/tvTitleText_"
+                    style="@style/txt_000_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    tools:text="@string/app_name" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu"
+                android:tint="@color/black"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription="@null"
+                android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/home)}"
+                android:src="@drawable/ic_menu"
+                android:visibility="@{isHomeShow ? View.VISIBLE : View.GONE, default=gone}" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:contentDescription="@null"
+                android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/back)}"
+                android:src="@drawable/ic_back_gray"
+                android:scaleType="fitCenter"
+                android:tint="@color/black"
+                android:visibility="@{isBackShow ? View.VISIBLE : View.GONE, default=gone}" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@mipmap/search"
+                android:tint="@color/black"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_32sdp"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/refresh)}"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_menu"
+                    android:visibility="@{isRefreshShow ? View.VISIBLE : View.GONE, default=gone}" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgSync"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_menu"
+                    android:visibility="gone" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgInternet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@{isInterNetAvailable?@drawable/ic_internet_connected:@drawable/ic_internet_not_connected}"
+                    android:visibility="@{isInterNetAvailableShow ? View.VISIBLE : View.GONE, default=visible}" />
+
+                <!--<androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_internet_not_connected"
+                    android:visibility="@{isInterNetAvailable ? View.GONE : View.VISIBLE, default=gone}" />-->
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/more)}"
+                    android:src="@drawable/ic_menu"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:visibility="@{isMoreShow ? View.VISIBLE : View.GONE, default=gone}" />
+
+                <com.common.view.CMTextView
+                    android:id="@+id/tvReset"
+                    style="@style/txt_theme_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/reset"
+                    android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/reset)}"
+                    android:paddingVertical="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:visibility="@{isResetShow ? View.VISIBLE : View.GONE, default=gone}"/>
+
+            </LinearLayout>
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:background="@color/gray_light"/>-->
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</layout>

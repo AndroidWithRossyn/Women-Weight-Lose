@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="handler"
+            type="com.loseweight.MyProfileActivity.ClickHandler" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/topbar"
+                layout="@layout/topbar" />
+
+        </LinearLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp">
+
+                    <com.common.view.CBTextView
+                        android:id="@+id/tvKgCm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Kg,Cm"
+                        style="@style/txt_fff_14"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:background="@drawable/bg_primary_left_7"
+                        android:onClick="@{(v)->handler.onKgCmClick()}"/>
+
+                    <com.common.view.CBTextView
+                        android:id="@+id/tvLbsFt"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lbs,Ft"
+                        style="@style/txt_theme_14"
+                        android:gravity="center"
+                        android:paddingVertical="@dimen/_7sdp"
+                        android:background="@drawable/bg_primary_border_right_7"
+                        android:onClick="@{(v)->handler.onLbsFtClick()}"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <com.common.view.CMTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_666_18"
+                        android:text="@string/height"/>
+
+                    <com.common.view.CMEditTextView
+                        android:id="@+id/editHeight"
+                        style="@style/txt_000_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/gray_light____"
+                        android:focusable="false"
+                        android:onClick="@{(v)->handler.onHeightClick()}"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:text="264 CM" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.common.view.CMTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_666_18"
+                        android:text="@string/weight"/>
+
+                    <com.common.view.CMEditTextView
+                        android:id="@+id/editWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_000_18"
+                        android:focusable="false"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:backgroundTint="@color/gray_light____"
+                        android:text="23.1 KG"
+                        android:onClick="@{(v)->handler.onWeightClick()}"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <com.common.view.CMTextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_666_18"
+                        android:text="@string/target_weight"/>
+
+                    <com.common.view.CMEditTextView
+                        android:id="@+id/editTargetWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_000_18"
+                        android:focusable="false"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:backgroundTint="@color/gray_light____"
+                        android:text="59.9 KG"
+                        android:onClick="@{(v)->handler.onTargetWeightClick()}"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/llAdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/llAdViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isLoading"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="handler"
+            type="com.loseweight.PerformWorkOutActivity.ClickHandler" />
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/tvAnimation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:shadowColor="@color/green_gradual_end_color"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="8"
+                    android:textColor="@color/green_gradual_start_color"
+                    android:textSize="@dimen/_60ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@drawable/ic_back_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="@{(v)->handler.onBackClick()}"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgSound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wp_ic_sound"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="@{(v)->handler.onSoundClick()}"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/wp_ic_video"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgSound"
+                android:onClick="@{(v)->handler.onVideoClick()}"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCommonQuestion"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/btn_bg_round"
+                android:backgroundTint="#21000000"
+                android:src="@drawable/ic_bulb"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgVideo"
+                android:onClick="@{(v)->handler.onCommonQuestionClick()}"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBarTop"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5sp"
+            android:indeterminate="false"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_linear_transparent" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_15sdp"
+            android:gravity="center_horizontal"
+            android:background="@color/white">
+
+            <com.common.view.CBTextView
+                android:id="@+id/tvTitleReadyToGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ready to go!"
+                style="@style/txt_theme_20"
+                android:textSize="@dimen/_20ssp"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:onClick="@{(v)->handler.onWorkOutInfoClick()}">
+
+                <com.common.view.CMTextView
+                    android:id="@+id/tvExerciesName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:text="Knee Lift Right"
+                    style="@style/txt_000_22"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/icon_exe_question"/>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/llReadyToGo"
+                android:visibility="gone">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progressBarReadyToGo"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    app:cpb_background_progressbar_color="@color/gray_light____"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress="0"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="@color/primary"
+                    app:cpb_progressbar_width="5dp"
+                    app:cpb_round_border="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="@{(v)->handler.onReadyToGoClick()}"/>
+
+                <com.common.view.CBTextView
+                    android:id="@+id/tvCountDownReadyToGO"
+                    style="@style/txt_000_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_30ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/progressBarReadyToGo"
+                    app:layout_constraintEnd_toEndOf="@+id/progressBarReadyToGo"
+                    app:layout_constraintStart_toStartOf="@+id/progressBarReadyToGo"
+                    app:layout_constraintTop_toTopOf="@+id/progressBarReadyToGo"
+                    tools:text="3" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_next_exercise"
+                    android:padding="@dimen/_15sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:onClick="@{(v)->handler.onSkipReadyToGoClick()}"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/llAfterStartWithTime"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <com.common.view.CBTextView
+                    android:id="@+id/tvSecond"
+                    style="@style/txt_000_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_30ssp"
+                    tools:text="00:15" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:paddingHorizontal="@dimen/_55sdp">
+
+                    <ProgressBar
+                        android:id="@+id/progressBarWorkOut"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:indeterminate="false"
+                        tools:progress="50"
+                        android:onClick="@{(v)->handler.onWorkOutInfoClick()}"
+                        android:progressDrawable="@drawable/progress_bar_linear" />
+
+                    <com.common.view.CBTextView
+                        android:id="@+id/tvPause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        style="@style/txt_fff_18"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:text="@string/pause"
+                        android:textAllCaps="true"
+                        android:drawableStart="@drawable/icon_exe_pause"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAfterStartWithSteps"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.common.view.CBTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="X"
+                        style="@style/txt_000_22"
+                        android:textSize="@dimen/_20ssp"/>
+
+                    <com.common.view.CBTextView
+                        android:id="@+id/tvTotalStep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        style="@style/txt_000_22"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:textSize="@dimen/_27ssp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCompleteExce"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginHorizontal="@dimen/_45sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_bg_round_grediant"
+                    android:onClick="@{(v)->handler.onNextExerciseClick()}">
+
+                    <com.common.view.CBTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/txt_fff_20"
+                        android:text="@string/done"
+                        android:textAllCaps="true"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableStart="@drawable/icon_exe_done"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llPrevNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llPrev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:layout_gravity="center"
+                    android:onClick="@{(v)->handler.onPrevExerciseClick()}">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgPrev"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/icon_exe_prev"/>
+
+                    <com.common.view.CMTextView
+                        android:id="@+id/tvPrev"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Previous"
+                        android:gravity="center"
+                        style="@style/txt_999_18"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_light_"
+                    android:layout_marginVertical="@dimen/_10sdp"/>
+
+                <LinearLayout
+                    android:id="@+id/llSkip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingVertical="@dimen/_7sdp"
+                    android:gravity="center"
+                    android:onClick="@{(v)->handler.onNextExerciseClick()}">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgSkip"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/icon_exe_skip"/>
+
+                    <com.common.view.CMTextView
+                        android:id="@+id/tvSkip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skip"
+                        android:gravity="center"
+                        style="@style/txt_999_18"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

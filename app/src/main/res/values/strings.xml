@@ -1,0 +1,201 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Lose Weight For Women</string>
+    <string name="youtube_api_key">AIzaSyAoyJpy8xbelBg5uuoAfa_c2E4v262OiSE</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+
+    <string name="privacy_policy_link">https://sites.google.com/view/femaleweightlose-pp/home</string>
+    <string name="number_picker_formatter">%02d</string>
+
+    <string name="btn_ok">Ok</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="exit_msg">Press Back twice to exit</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="choose_gallery">Pick From Gallery</string>
+    <string name="err_file_manager">Please install a File Manager.</string>
+    <string name="choose_camera">Take From Camera</string>
+    <string name="permission_msg">Gallery and Camera permission is required</string>
+    <string name="permission_setting">Permission Setting</string>
+
+    <string name="login">Login</string>
+    <string name="profile">Profile</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+
+    <string name="err_camera">cannot open camera</string>
+
+    <string name="name">Name</string>
+
+
+    <string name="need_permission_title">Need permission(s)</string>
+    <string name="err_need_permission_msg">You have previously declined this permission.\nYou must approve this permission in \"Permissions\" in the app settings on your device.</string>
+
+    <string name="back">Back</string>
+    <string name="more">More</string>
+    <string name="refresh">Refresh</string>
+    <string name="facility_code">Facility Code</string>
+    <string name="home">Home</string>
+    <string name="re_scan">Re-Scan</string>
+    <string name="inmate_activity">Inmate Activity</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="logout">Logout</string>
+
+    <string name="user">User</string>
+    <string name="setting">Setting</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="what_s_your_goal">What\'s your goal?</string>
+
+    <string name="goal_lose_weight">Lose weight &amp; keep fit</string>
+    <string name="goal_butt_lift">Butt lift &amp; tone</string>
+    <string name="goal_lose_belly_fat">Lose belly fat</string>
+    <string name="goal_build_muscle_strength">Build muscle &amp; strength</string>
+
+    <string name="next">next</string>
+    <string name="skip">Skip</string>
+    <string name="how_much_do_nyou_weight">How much do\nyou weight?</string>
+    <string name="let_us_know_you_better_to_help_you_boost_your_work_result">Let us know you better to help you boost your work result.</string>
+    <string name="lose_weight_with_the_plan_that_suits_you_best">Lose weight with the plan that suits you best</string>
+    <string name="how_tall_are_nyou">How Tall Are\nyou?</string>
+    <string name="bmi">BMI</string>
+    <string name="bmi_colon">BMI:</string>
+    <string name="go_to_homepage"><u>Go to homepage</u></string>
+    <string name="plan">Plan</string>
+    <string name="reports">Reports</string>
+    <string name="me">Me</string>
+    <string name="lose_weight">Lose Weight</string>
+    <string name="go">Go!</string>
+    <string name="drink">Drink</string>
+    <string name="turn_on_water_tracker">Turn On Water Tracker</string>
+
+    <string name="dummy_text">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="dummy_text2">Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="instruction">Instruction</string>
+    <string name="fast_workout">Fast workout</string>
+    <string name="not_enough_time">Not enough time?</string>
+    <string name="_2_7_min_fast_workout">2-7 min fast workout</string>
+    <string name="_2_7_minutes_workout_to_do_anything_anywhere">2-7 minutes workout to do anything, anywhere.</string>
+    <string name="body_focus">Body focus</string>
+
+    <string name="sound_options">Sound options</string>
+    <string name="mute">Mute</string>
+    <string name="voice_guide">Voice guide</string>
+    <string name="voice_guide_des">Know your next workout and how many times you need to do it.</string>
+    <string name="coach_tips">Coach tips</string>
+    <string name="common_questions">Common questions</string>
+    <string name="btn_continue">Continue</string>
+    <string name="close">Close</string>
+    <string name="exercies">Exercises</string>
+    <string name="workouts">Workouts</string>
+    <string name="kcal">Kcal</string>
+    <string name="minute">Minute</string>
+    <string name="minutes">minutes</string>
+    <string name="duration">Duration</string>
+    <string name="share">Share</string>
+    <string name="do_it_again">Do it again</string>
+    <string name="reminder_colon">Reminder:</string>
+    <string name="reminder">Reminder</string>
+    <string name="kg">KG</string>
+    <string name="lb">LB</string>
+    <string name="weight">Weight</string>
+    <string name="enter_weight">Please Enter Weight</string>
+    <string name="tap_here_to_input_your_height">Tap <b>here</b> to input your height</string>
+    <string name="i_feel">I feel</string>
+    <string name="easy">Easy</string>
+    <string name="exhausted">Exhausted</string>
+    <string name="feedback">Feedback</string>
+    <string name="height">Height</string>
+    <string name="enter_height">Please Enter Height</string>
+    <string name="cm">CM</string>
+
+    <string name="in">IN</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="year_of_birth">Year of Birth</string>
+    <string name="previous">Previous</string>
+    <string name="set">SET</string>
+    <string name="history">History</string>
+
+    <string name="delete">Delete</string>
+    <string name="confirm_delete">Confirm delete?</string>
+    <string name="delete_confirmation_msg">Are you sure you want to delete it?</string>
+    <string name="restart_confirmation_msg">Are you sure you want to restart progress?</string>
+    <string name="restart_day_confirmation_msg">Would you like to clear your progress and restart from day 1?</string>
+    <string name="total">Total</string>
+    <string name="current">Current</string>
+    <string name="heaviest">Heaviest</string>
+    <string name="lightest">Lightest</string>
+    <string name="current_colon">Current:</string>
+    <string name="heaviest_colon">Heaviest:</string>
+    <string name="lightest_colon">Lightest:</string>
+    <string name="edit">Edit</string>
+    <string name="workout">Workout</string>
+
+    <string name="go_premium">Go Premium</string>
+    <string name="voice_options_tts">Voice Options (TTS)</string>
+    <string name="test_voice">Test Voice</string>
+    <string name="download_tts_engine">Download TTs Engine</string>
+    <string name="select_tts_engine">Select TTS Engine</string>
+    <string name="google_text_to_speech_engine">Google Text-to-speech Engine</string>
+    <string name="voice_language">Voice Language</string>
+    <string name="download_more_tts_language_data">Download more TTS language data</string>
+    <string name="device_tts_setting">Device TTS Setting</string>
+    <string name="health_data">Health Data</string>
+    <string name="remind_me_to_workout_every_day">Remind me to workout every day</string>
+    <string name="metric_and_imperial_units"><![CDATA[Metric & Imperial Units]]></string>
+    <string name="keep_the_screen_on">Keep the screen on</string>
+    <string name="general_settings">General Settings</string>
+    <string name="community">Community</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="support_us">Support Us</string>
+    <string name="rate_us">Rate us</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="did_you_hear_test_voice">Did you hear the test voice?</string>
+    <string name="my_profile">My Profile</string>
+    <string name="restart_progress">Restart Progress</string>
+    <string name="remove_ads">Remove Ads</string>
+
+    <string name="iap_detail">1. All payments made through Play Store are controlled and managed by Google.\n2. Payments will be charged to your Play Store Account at confirmation of purchase.\n3. Subscription automatically renews, unless auto-renew is turned off at least 24 hours before the end of the current period.\n4. Account will be charged for renewal within 24 hours prior to the end of the current period.\n5. You may manage your subscriptions and auto-renewal may be turned off by going to your Play Store account settings after purchase.\n6. Any unused portion of a free trial period, if offered, will be forfeited if you purchase a subscription to the publication, where applicable.</string>
+    <string name="start">Start</string>
+    <string name="target_weight">Target weight</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dl_test_voice_no_msg_test">The TTS engine you are using is not working now, please double check it, switch to another TTS engine, or download TTS voice language.</string>
+    <string name="please_choose_guide_voice_engine">Please choose guide voice engine:</string>
+    <string name="repeat">Repeat</string>
+    <string name="tip">Tip</string>
+    <string name="send_feedback">Send feedback</string>
+
+    <string name="week">Week</string>
+    <string name="mins">Mins</string>
+    <string name="quite_exercise_msg">Sweat dripping is fat\ndropping.</string>
+    <string name="quit">Quit</string>
+    <string name="str_continue">Continue</string>
+    <string name="come_back_in_30_minute"><u>Come back in 30 minute</u></string>
+    <string name="done">Done</string>
+    <string name="view_all">View all</string>
+    <string name="finished">Finished</string>
+    <string name="restart">Restart</string>
+    <string name="recent">Recent</string>
+    <string name="rest_day">Rest Day</string>
+    <string name="replace">Replace</string>
+    <string name="reset_plan">Reset plan</string>
+    <string name="edit_plan">Edit plan</string>
+    <string name="save_changes_que">Save changes?</string>
+    <string name="reset">Reset</string>
+    <string name="replace_with">Replace with</string>
+    <string name="change_plan">Change plan</string>
+    <string name="change_language">Change Language</string>
+    <string name="language_options">Language options</string>
+    <string name="hours">Hours</string>
+    <string name="completed">Completed</string>
+    <string name="well_done">Well done!</string>
+    <string name="time_to_drink_water">It is time to drink water</string>
+    <string name="time_to_hydrate">It\'s time to hydrate!</string>
+    <string name="drink_water_make_skin_batter">Drink Water can make your skin look batter.</string>
+    <string name="pause">Pause</string>
+    <string name="no_internet_available">No Internet Available</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.common.view.CMTextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_fff_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_bg_round_theme"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingTop="@dimen/_7sdp"
+            android:paddingRight="@dimen/_18sdp"
+            android:paddingBottom="@dimen/_7sdp"
+            android:text="App"
+            android:textAllCaps="true" />
+
+
+    </LinearLayout>
+
+</layout>

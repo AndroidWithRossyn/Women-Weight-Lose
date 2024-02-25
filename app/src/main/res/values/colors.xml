@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0ab897</color>
+    <color name="colorPrimaryDark">#0ab897</color>
+    <color name="colorPrimaryLight">#bbede2</color>
+    <color name="colorAccent">#26d5b4</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="primary">#0ab897</color>
+    <color name="primaryDark">#0ab897</color>
+    <color name="accent">#26d5b4</color>
+
+    <color name="app_astrik_color">#8f92b4</color>
+
+    <color name="list_devider">#e6e6e6</color>
+    <color name="gray_light_">#999999</color>
+    <color name="gray_light__">#eeeeee</color>
+    <color name="gray_light____">#d3d1d2</color>
+    <color name="gray_light_____">#f4f4f4</color>
+    <color name="black_66">#66000000</color>
+
+    <color name="select_transparancy">#e2e2e2</color>
+    <color name="white_transparent">#99FFFFFF</color>
+
+    <color name="pin_text_color">#414141</color>
+    <color name="shadow_view_default_shadow_color">#DCDDE0</color>
+    <color name="shadow_view_foreground_color_dark">#1f000000</color>
+
+    <color name="whats_your_goal_card_bg_color">#F0F3F5</color>
+    <color name="whats_your_goal_card_bg_color_select">#5D6C73</color>
+
+    <color name="green_gradual_end_color">#0ab897</color>
+    <color name="green_gradual_start_color">#26d5b4</color>
+
+    <color name="common_blue_color">#76AEFF</color>
+    <color name="common_blue_light_color">#DAE9FF</color>
+
+
+    <color name="col_343">#343434</color>
+    <color name="col_666">#666666</color>
+    <color name="col_999">#999999</color>
+    <color name="col_whats_your_goal">#DF666666</color>
+
+    <color name="number_picker_selected_text_color">#0ab897</color>
+    <color name="number_picker_text_color">#A6A6A6</color>
+    <color name="number_picker_divider_color">#e6e6e6</color>
+
+    <!-- Todo BMI Chart Background -->
+    <color name="colorFirst">#91CEC0</color>
+    <color name="colorSecond">#154C83</color>
+    <color name="colorThird">#1DC974</color>
+    <color name="colorFour">#CCC504</color>
+    <color name="colorFive">#E09C55</color>
+    <color name="colorSix">#CF2E2E</color>
+
+    <color name="collas_notification_txt_color">#000000</color>
+
+</resources>

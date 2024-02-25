@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dp25">@dimen/_25sdp</dimen>
+
+    <dimen name="btn_height">@dimen/_40sdp</dimen>
+    <dimen name="edit_text_height">@dimen/_60sdp</dimen>
+
+    <dimen name="guide_card_height">@dimen/_55sdp</dimen>
+    <dimen name="choose_plan_item_height">@dimen/_60sdp</dimen>
+    <dimen name="np_selected_text_size">35sp</dimen>
+    <dimen name="np_text_size">35sp</dimen>
+
+    <dimen name="np_dob_selected_text_size">24sp</dimen>
+    <dimen name="np_dob_text_size">24sp</dimen>
+
+    <integer name="viewfliper_animation">700</integer>
+</resources>

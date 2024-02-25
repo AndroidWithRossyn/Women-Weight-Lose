@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgMenuIcon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:clickable="true"-->
+        <!--android:src="@mipmap/logout"-->
+        <!--android:focusable="true"/>-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMenuIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/ic_menu" />
+
+        <com.common.view.CMTextView
+            android:id="@+id/tvMenuName"
+            style="@style/txt_666_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:hint="Name" />
+        <!--<com.common.view.CTextView-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/tvMenuName"-->
+        <!--android:layout_gravity="center"-->
+        <!--style="@style/txt_000_12"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Name" />-->
+
+        <!--android:drawableStart="@drawable/raund_like_unlike"-->
+        <!--android:gravity="center|start"-->
+
+    </LinearLayout>
+
+</LinearLayout>

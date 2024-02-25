@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'com.google.gms.google-services'
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+android {
+    compileSdkVersion 34
+    defaultConfig {
+        applicationId "com.loseweight.forwomen"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 3
+        versionName "1.9"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "Lose-Weight-For-Women-${variant.name}-${variant.versionName}.apk"
+            }
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0']
+        }
+    }
+
+
+    dataBinding {
+        enabled = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    namespace 'com.loseweight'
+    lint {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.10.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    implementation "com.mikepenz:materialdrawer:6.1.2"
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
+    // Retrofit APIs
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    testImplementation 'com.squareup.retrofit2:retrofit-mock:2.3.0'
+
+    implementation 'com.bignerdranch.android:expandablerecyclerview:3.0.0-RC1'
+    implementation 'com.nex3z:notification-badge:1.0.4'
+
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-andx'
+
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation project(":horizontal-picker")
+
+    implementation "androidx.preference:preference-ktx:1.2.1"
+    implementation 'com.shawnlin:number-picker:2.4.9'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.google.android.gms:play-services-ads:22.5.0'
+    implementation "com.android.billingclient:billing-ktx:$billing_version"
+
+    implementation 'ru.rambler.android:swipe-layout:1.1.0'
+
+//    implementation 'com.facebook.android:audience-network-sdk:6.2.1'
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    implementation(name: 'AudienceNetwork', ext: 'aar')
+    implementation(name: 'DebugSettings', ext: 'aar')
+
+}

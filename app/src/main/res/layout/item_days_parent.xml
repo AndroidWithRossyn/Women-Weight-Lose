@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+<LinearLayout
+    android:id="@+id/llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingVertical="@dimen/_5sdp"
+    android:paddingHorizontal="@dimen/_15sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_week"/>
+
+    <com.common.view.CMTextView
+        android:id="@+id/tvWeekName"
+        style="@style/txt_333_14"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/_7sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_18sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textAllCaps="true"
+        android:text="Week 1" />
+
+    <com.common.view.CTextView
+        android:id="@+id/tvCurrentDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txt_theme_14"
+        tools:text="1"
+        android:textAllCaps="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/tvWeekDays"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.common.view.CTextView
+        android:id="@+id/tvWeekDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/txt_999_14"
+        android:text="/7"
+        android:textAllCaps="true" />
+
+    <LinearLayout
+        android:id="@+id/llWellDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.common.view.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txt_999_14"
+            android:text="@string/well_done"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableStart="@drawable/ic_well_done" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</layout>

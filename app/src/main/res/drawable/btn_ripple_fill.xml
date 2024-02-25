@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- An white rectangle ripple. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:color="@color/white"
+        tools:targetApi="lollipop"> <!-- ripple effect color -->
+    <item
+            android:id="@android:id/background"
+            android:drawable="@drawable/btn_bg_round" />
+</ripple>
